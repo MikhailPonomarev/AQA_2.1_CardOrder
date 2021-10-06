@@ -1,0 +1,85 @@
+Skip to content
+Search or jump to…
+Pull requests
+Issues
+Marketplace
+Explore
+
+@MikhailPonomarev
+netology-code
+/
+aqa-homeworks
+Public
+4
+459
+Code
+Pull requests
+Actions
+Wiki
+Security
+Insights
+aqa-homeworks/.gitignore
+@coursar
+coursar fix: .gitignore
+Latest commit d032024 on 17 Oct 2019
+ History
+ 1 contributor
+45 lines (39 sloc)  450 Bytes
+IntelliJ IDEAPhpStormWebStorm
+Thumbs.db*
+.DS_Store
+HELP.md
+.gradle
+build/
+
+### STS ###
+.apt_generated
+.classpath
+.factorypath
+.project
+.settings
+.springBeans
+.sts4-cache
+
+### IntelliJ IDEA ###
+.idea
+*.iws
+*.iml
+*.ipr
+out/
+
+### NetBeans ###
+/nbproject/private/
+/nbbuild/
+/dist/
+/nbdist/
+/.nb-gradle/
+
+### VS Code ###
+.vscode/
+
+### Package Files ###
+*.jar
+*.war
+*.nar
+*.ear
+*.zip
+*.tar.gz
+*.rar
+
+### Exclusions ###
+!gradle/wrapper/gradle-wrapper.jar
+!**/src/main/**
+!**/src/test/**
+© 2021 GitHub, Inc.
+Terms
+Privacy
+Security
+Status
+Docs
+Contact GitHub
+Pricing
+API
+Training
+Blog
+About
