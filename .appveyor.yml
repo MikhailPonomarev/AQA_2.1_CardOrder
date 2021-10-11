@@ -10,8 +10,8 @@ build: off
 
 install:
 
-  - chmod +x gradlew
   - java -jar ./artifacts/app-order.jar &
 
 build_script:
-  - ./gradlew test --info --stacktrace -Dselenide.headless=true
+  - chmod +x gradlew
+  - ./gradlew test -Dselenium.headless=true --info
