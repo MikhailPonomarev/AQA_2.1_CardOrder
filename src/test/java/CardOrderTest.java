@@ -42,7 +42,7 @@ public class CardOrderTest {
         inputField.get(1).sendKeys("+79001000110");
         driver.findElement(By.className("checkbox__box")).click();
         driver.findElement(By.tagName("button")).click();
-        String actual = driver.findElement(By.className("Success_successBlock__2L3Cw")).getText();
+        String actual = driver.findElement(By.cssSelector("[data-test-id='order-success']")).getText();
         String expected = "Ваша заявка успешно отправлена! Наш менеджер свяжется с вами в ближайшее время.";
         assertEquals(expected, actual.strip());
     }
@@ -71,9 +71,9 @@ public class CardOrderTest {
     }
 
     @Test
-    public void orderOnlyWithCheckbox() {
+    public void orderWithEmptyNameField() {
         driver.findElement(By.cssSelector("[data-test-id='name'] [type='text']")).sendKeys("");
-        driver.findElement(By.cssSelector("[data-test-id='phone'] [type='tel']")).sendKeys("");
+        driver.findElement(By.cssSelector("[data-test-id='phone'] [type='tel']")).sendKeys("+79001000110");
         driver.findElement(By.cssSelector(".checkbox__box")).click();
         driver.findElement(By.cssSelector("[role='button']")).click();
         String actual = driver.findElement(By.cssSelector("[data-test-id='name'] [class='input__sub']")).getText();
